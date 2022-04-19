@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --main-color: #edf2f4;
+    --background-color:#2b2d42;
+    --secound-color: #8d99ae;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color) ;
+}
+.flexy {
+    display: flex;
+    width: 100vw;
+}
+.instruciton {
+    width: 600px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2f4;
+}
+
+.instruciton p{
+    font-size: 2.5rem;
+    text-align: center;
+    width: 600px;
+    padding: 50px;
+}
+
+.instruciton button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white; 
+    outline: none;
+    background-color: var(--secound-color);
+    padding: 20px;
+
+}
+
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    min-width: 50vw;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(100px, auto) 80px minmax(80px, auto)  repeat(2,80px);
+}
+
+.calculator-grid button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white; 
+    outline: none;
+    background-color: var(--main-color);
+}
+
+.calculator-grid button:hover {
+    opacity: 0.6;
+    font-size: 2.2rem;
+}
+
+.manipulate-area {
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(4,100px);
+}
+
+.manipulate-area button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white; 
+    outline: none;
+    background-color: var(--main-color);
+}
+
+.span-four {
+    grid-column: span 4;
+}
+
+.output {
+    background-color: var(--secound-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .current-value {
+    color: white;
+    font-size: 2rem;
+   }
+
+.output .previous-value {
+ color: white;
+ opacity: 0.75;
+ font-size: 1rem;
+}
+
+.comunication {
+    background-color: var(--secound-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    padding: 15px;
+}

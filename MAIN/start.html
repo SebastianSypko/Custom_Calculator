@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <meta name="description" content="Calculator which you can customize and selct your own operations">
+    <link href="/CSS/style.css" rel="stylesheet">
+    <script src="/JS/main.js" defer></script>
+    <link rel="shortcut icon" href="calculator-icon-png-6.jpg">
+</head>
+<body>
+    <div class="flexy">
+        <div class="instruciton">
+            <p>Select the numbers and operations you want to select and then press the Make Customized Calculator button</p>
+            <button class="acceptChanges">Make Customized Calculator</button>
+        </div>
+        <div class="calculator-grid">
+            <div class="output span-four">
+                <div class="previous-value"></div>
+                <div class="current-value"></div>
+            </div>
+            <button data-clear>AC</button>
+            <button data-delete>DEL</button>
+            <button data-sign>+/-</button>
+            <button class='data-number'>.</button>
+            <div class="manipulate-area span-four">
+                <button class="selected data-number">1</button>
+                <button class="selected data-number">2</button>
+                <button class="selected data-number">3</button>
+                <button class="selected data-operation">+</button>
+                <button class="selected data-number">4</button>
+                <button class="selected data-number">5</button>
+                <button class="selected data-number">6</button>
+                <button class="selected data-operation">-</button>
+                <button class="selected data-number">7</button>
+                <button class="selected data-number">8</button>
+                <button class="selected data-number">9</button>
+                <button class="selected data-operation">*</button>
+                <button class="selected data-operation-factorial">!</button>
+                <button class="selected data-number">0</button>
+                <button class="selected data-operation">^</button>
+                <button class="selected data-operation">÷</button>
+            </div>
+            <button data-equals class="span-four">=</button>
+            <div class="comunication span-four"></div>
+        </div>
+    </div>
+</body>
+</html>
